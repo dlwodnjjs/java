@@ -88,7 +88,9 @@ public class Lecture02 {
 
 
             }
-            if()
+            if(ranvalue==3){
+                ;
+            }
         }
 
 
