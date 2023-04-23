@@ -2,11 +2,14 @@ package leture20230319;
 import java.util.Scanner;
 import java.util.Random;
 public class Lecture04 {
-    public static void main(String[] args) {
+    public static void start(){
         Scanner scan=new Scanner(System.in);
         Random random= new Random();
         System.out.println("게임을 시작 하시겠습니까> 예)아니오)");
-        String answer=scan.nextLine();
+    }
+    public static void match(String answer){
+        Scanner scan=new Scanner(System.in);
+        Random random= new Random();
         if(answer.equals("예")){
             System.out.println("예, 매칭을 시작하겠습니다.");
             System.out.println("게임이 매칭되었습니다.");
@@ -29,9 +32,12 @@ public class Lecture04 {
                     System.out.println("페이커님의 포지션은 서폿입니다.");
             }
         }
-        else{
-
-        }
+    }
+    public static void main(String[] args) {
+        start();
+        Scanner scan=new Scanner(System.in);
+        String answer=scan.nextLine();
+        match(answer);
 
     }
 }

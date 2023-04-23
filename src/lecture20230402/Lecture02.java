@@ -68,7 +68,6 @@ public class Lecture02 {
                 System.out.println("페이커님의 포지션은 서폿입니다. ");
                 break;
         }
-        int k=55134;
         if(party!=1){
             for(int i=1;i<party;i++){
                 System.out.print("파티원"+i+"의 포지션은 ");
