@@ -2,7 +2,7 @@ package lecture20230423;
 import java.util.Random;
 import java.util.Scanner;
 public class Lecture01 {
-    public static void main(String[] args) {
+    public static void battle(){
         Random ran=new Random();
         Scanner scan=new Scanner(System.in);
         System.out.println("대결을 시작합니까?");
@@ -67,9 +67,9 @@ public class Lecture01 {
             }
 
         }
-        else{
-
-        }
+    }
+    public static void main(String[] args) {
+        battle();
 
     }
 }

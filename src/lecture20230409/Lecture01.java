@@ -2,7 +2,7 @@ package lecture20230409;
 import java.util.Random;
 import java.util.Scanner;
 public class Lecture01 {
-    public static void main(String[] args) {
+    public static void battle(){
         Scanner scan= new Scanner(System.in);
         System.out.println("페이커의 포지션은 미드이고 야쓰오를 선택했습니다.");
         System.out.println("페이커의 기본공격은 100입니다.");
@@ -41,5 +41,8 @@ public class Lecture01 {
 
             }
         }
+    }
+    public static void main(String[] args) {
+       battle();
     }
 }

@@ -2,7 +2,7 @@ package lecture20230423;
 import java.util.Scanner;
 import java.util.Random;
 public class Lecture02 {
-    public static void main(String[] args) {
+    public static void tier(){
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
         System.out.println("게임 시작");
@@ -112,5 +112,8 @@ public class Lecture02 {
             }
         }
         System.out.print(" 입니다.");
+    }
+    public static void main(String[] args) {
+        tier();
     }
 }

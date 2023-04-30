@@ -30,11 +30,34 @@ public class Lecture03 {
         }
         System.out.println(gammode+"을(를) 선택했습니다.\n"+gammode+"을(를) 매칭하겠습니다.");
     }
-    public static void main(String[] args) {
+    public static void match(){
         ArrayList<Integer> arr= new ArrayList();
         Scanner scan=new Scanner(System.in);
         Random random= new Random();
-        start();
+        int value3=random.nextInt(10);
+        if(value3%5==1){
+            if(value3%10==1){
+                try{
+                    System.out.println("......우라 파티원이 게임을 취소했습니다......");
+                    Thread.sleep(4000);
+                    start();
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+            try{
+                System.out.println("......누군가 게임을 취소해 다시 매칭을 시작합니다......");
+                Thread.sleep(4000);
+            }catch(InterruptedException e){
+                e.printStackTrace();
+            }
+        }
+        System.out.println("게임이 매칭되었습니다.");
+    }
+    public static void position(){
+        ArrayList<Integer> arr= new ArrayList();
+        Scanner scan=new Scanner(System.in);
+        Random random= new Random();
         int value3=random.nextInt(10);
         if(value3%5==1){
             if(value3%10==1){
@@ -152,5 +175,16 @@ public class Lecture03 {
             }
 
         }
+    }
+    public static void app(){
+        ArrayList<Integer> arr= new ArrayList();
+        Scanner scan=new Scanner(System.in);
+        Random random= new Random();
+        start();
+        match();
+        position();
+    }
+    public static void main(String[] args) {
+        app();
     }
 }
